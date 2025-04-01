@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, CoffeeIcon } from "lucide-react";
@@ -21,9 +20,12 @@ const HomePage = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="h-screen relative flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
         <div 
-          className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/p/AF1QipObTBBXyc0p2TBCEDZk8ZixxktWaC2yHlBWF0Jh=w1080-h608-p-no-v0')] bg-cover bg-center"
+          className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/images/hero-bg.jpg')`
+          }}
           aria-hidden="true"
         ></div>
         
@@ -37,8 +39,8 @@ const HomePage = () => {
               <Button className="bg-white hover:bg-gray-200 text-black rounded-none text-sm px-8 py-6" size="lg">
                 <Link to="/menu">SHOP NOW</Link>
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-none text-sm px-8 py-6" size="lg">
-                <Link to="/about">ABOUT US</Link>
+              <Button variant="outline" className="border-white bg-white hover:bg-gray-100 rounded-none text-sm px-8 py-6" size="lg">
+                <Link to="/about" className="text-black">ABOUT US</Link>
               </Button>
             </div>
           </div>
@@ -58,19 +60,19 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <FeaturedProduct 
-              image="https://lh3.googleusercontent.com/p/AF1QipOV5bz48RxMXELVjoLJ0x9XA6S_yIK7o0z60Quj=w1080-h608-p-no-v0" 
+              image="/images/products/mae-mu-kID9sxbJ3BQ-unsplash.jpg" 
               title="Signature Blend" 
               price="$16.99"
               description="Our house specialty, rich and aromatic with notes of chocolate and caramel."
             />
             <FeaturedProduct 
-              image="https://lh3.googleusercontent.com/p/AF1QipM0tMo9f9c5bwdkBQEQT67JBDFi2SDkt3_fN-FX=w1080-h608-p-no-v0" 
+              image="/images/products/nicholas-doyle-t7jTtJ9iyUE-unsplash.jpg" 
               title="Single Origin" 
               price="$18.99"
               description="Carefully selected beans from premium coffee growing regions."
             />
             <FeaturedProduct 
-              image="https://lh3.googleusercontent.com/p/AF1QipNDZQOA6aIT_QBMOzZrwkT0tQesHIbq7AliXMJz=w1080-h608-p-no-v0" 
+              image="/images/products/simon-takatomi-OIJudXjmIxs-unsplash.jpg" 
               title="Espresso Blend" 
               price="$17.99"
               description="Bold and balanced, perfect for espresso drinks and cold brew."
