@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Coffee, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { 
   Carousel, 
   CarouselContent, 
@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { FeaturedProduct } from "@/components/FeaturedProduct";
+import { SplineCoffeeViewer } from "@/components/SplineCoffeeViewer";
 
 const HomePage = () => {
   const testimonials = [
@@ -19,16 +20,16 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Minimal Hero Section */}
+      {/* Hero Section with Spline */}
       <section className="h-screen relative flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
         <div 
           className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/p/AF1QipObTBBXyc0p2TBCEDZk8ZixxktWaC2yHlBWF0Jh=w1080-h608-p-no-v0')] bg-cover bg-center"
           aria-hidden="true"
         ></div>
         
-        <div className="container mx-auto px-4 relative z-20 text-center">
-          <div className="mx-auto max-w-3xl">
+        <div className="container mx-auto px-4 relative z-20 text-center flex flex-col md:flex-row items-center">
+          <div className="mx-auto max-w-3xl md:w-1/2 mb-12 md:mb-0">
             <h1 className="text-5xl md:text-7xl font-light mb-8 text-white tracking-wide">AMERICAN COFFEE SHOP</h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 font-light max-w-xl mx-auto">
               Serving quality coffee and delicious food in a warm, inviting atmosphere.
@@ -41,6 +42,10 @@ const HomePage = () => {
                 <Link to="/about">ABOUT US</Link>
               </Button>
             </div>
+          </div>
+          
+          <div className="w-full md:w-1/2 h-[300px] md:h-[500px]">
+            <SplineCoffeeViewer />
           </div>
         </div>
       </section>
