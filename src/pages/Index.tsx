@@ -44,7 +44,7 @@ const HomePage = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-1/2 h-[300px] md:h-[500px]">
+          <div className="w-full md:w-1/2 h-[300px] md:h-[500px] relative">
             <SplineCoffeeViewer />
           </div>
         </div>
