@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, CoffeeIcon } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { 
   Carousel, 
   CarouselContent, 
@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { FeaturedProduct } from "@/components/FeaturedProduct";
+import { SplineScene } from "@/components/SplineScene";
 
 const HomePage = () => {
   const testimonials = [
@@ -20,35 +21,28 @@ const HomePage = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="h-screen relative flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/60 z-10"></div>
-        <div 
-          className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-fixed"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/images/hero-bg.jpg')`
-          }}
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent z-10"></div>
         
-        <div className="container mx-auto px-4 relative z-20 text-center flex flex-col md:flex-row items-center">
-          <div className="mx-auto max-w-3xl md:w-1/2 mb-12 md:mb-0">
-            <h1 className="text-5xl md:text-7xl font-light mb-8 text-white tracking-wide">AMERICAN COFFEE SHOP</h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-200 font-light max-w-xl mx-auto">
-              Serving quality coffee and delicious food in a warm, inviting atmosphere.
+        <div className="container mx-auto px-4 relative z-20 flex flex-col md:flex-row items-center justify-between h-full pt-20">
+          <div className="md:w-1/2 text-left">
+            <h1 className="text-6xl md:text-8xl font-extralight mb-8 text-white tracking-wider">
+              AMERICAN<br />COFFEE
+            </h1>
+            <p className="text-xl md:text-2xl mb-12 text-gray-200 font-light max-w-xl">
+              Experience the perfect blend of tradition and innovation
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
-              <Button className="bg-white hover:bg-gray-200 text-black rounded-none text-sm px-8 py-6" size="lg">
-                <Link to="/menu">SHOP NOW</Link>
+            <div className="flex flex-wrap gap-6">
+              <Button className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 rounded-none text-sm px-8 py-6" size="lg">
+                <Link to="/menu">EXPLORE MENU</Link>
               </Button>
-              <Button variant="outline" className="border-white bg-white hover:bg-gray-100 rounded-none text-sm px-8 py-6" size="lg">
-                <Link to="/about" className="text-black">ABOUT US</Link>
+              <Button variant="outline" className="bg-transparent border-white/30 text-white hover:bg-white/10 rounded-none text-sm px-8 py-6" size="lg">
+                <Link to="/about" className="text-white">ABOUT US</Link>
               </Button>
             </div>
           </div>
           
-          <div className="w-full md:w-1/2 h-[300px] md:h-[500px] relative flex items-center justify-center">
-            <div className="bg-amber-800/40 backdrop-blur-sm rounded-full w-64 h-64 flex items-center justify-center">
-              <CoffeeIcon className="h-24 w-24 text-amber-200" />
-            </div>
+          <div className="w-full md:w-3/5 h-[400px] md:h-[800px] absolute right-0 top-1/2 -translate-y-1/2">
+            <SplineScene />
           </div>
         </div>
       </section>
