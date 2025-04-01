@@ -41,11 +41,11 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-amber-200" />
-                <span>41 Prospect Rd, Oakland Park, FL</span>
+                <span>2219 N Commerce Pkwy, Weston, FL 33326</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-amber-200" />
-                <span>(555) 123-4567</span>
+                <span>(954) 389-8164</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-amber-200" />

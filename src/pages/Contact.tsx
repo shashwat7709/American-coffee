@@ -62,7 +62,7 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-amber-600 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Address</h3>
-                  <p className="text-gray-600">41 Prospect Rd, Oakland Park, FL</p>
+                  <p className="text-gray-600">2219 N Commerce Pkwy, Weston, FL 33326</p>
                 </div>
               </div>
               
@@ -70,7 +70,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-amber-600 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <p className="text-gray-600">(954) 389-8164</p>
                 </div>
               </div>
               
@@ -86,8 +86,9 @@ const Contact = () => {
                 <Clock className="h-6 w-6 text-amber-600 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Opening Hours</h3>
-                  <p className="text-gray-600">Monday to Friday: 6AM - 8PM</p>
-                  <p className="text-gray-600">Weekends: 7AM - 9PM</p>
+                  <p className="text-gray-600">Monday to Friday: 7AM - 5:30PM</p>
+                  <p className="text-gray-600">Saturday: 8AM - 3PM</p>
+                  <p className="text-gray-600">Sunday: Closed</p>
                 </div>
               </div>
             </div>
@@ -95,7 +96,7 @@ const Contact = () => {
             {/* Map */}
             <div className="mt-8 rounded-lg overflow-hidden shadow-md">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.866878208183!2d-80.1397932!3d26.167212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d900924c4c69c7%3A0x1e11b9019354ee35!2s41%20Prospect%20Rd%2C%20Oakland%20Park%2C%20FL%2033334!5e0!3m2!1sen!2sus!4v1653902856978!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.6508698597656!2d-80.14873912404043!3d26.18174197734893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d903d38a59226b%3A0x3d0abd59f5b1ea99!2sAmerican%20Coffee%20Shop!5e0!3m2!1sen!2sus!4v1716752580943!5m2!1sen!2sus"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
