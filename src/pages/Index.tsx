@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, CoffeeIcon } from "lucide-react";
 import { 
   Carousel, 
   CarouselContent, 
@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/carousel";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { FeaturedProduct } from "@/components/FeaturedProduct";
-import { SplineCoffeeViewer } from "@/components/SplineCoffeeViewer";
 
 const HomePage = () => {
   const testimonials = [
@@ -20,7 +19,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section with Spline */}
+      {/* Hero Section */}
       <section className="h-screen relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/70 z-10"></div>
         <div 
@@ -44,8 +43,10 @@ const HomePage = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-1/2 h-[300px] md:h-[500px] relative">
-            <SplineCoffeeViewer />
+          <div className="w-full md:w-1/2 h-[300px] md:h-[500px] relative flex items-center justify-center">
+            <div className="bg-amber-800/40 backdrop-blur-sm rounded-full w-64 h-64 flex items-center justify-center">
+              <CoffeeIcon className="h-24 w-24 text-amber-200" />
+            </div>
           </div>
         </div>
       </section>
