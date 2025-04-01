@@ -7,12 +7,12 @@ export const GalleryGrid = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const galleryImages = [
-    "https://lh3.googleusercontent.com/p/AF1QipObTBBXyc0p2TBCEDZk8ZixxktWaC2yHlBWF0Jh=s1360-w1360-h1020",
-    "https://lh3.googleusercontent.com/p/AF1QipNkxB7NKyoSj9C0RAztxBb5kYzjcJOuGKb-_VHH=s1360-w1360-h1020",
-    "https://lh3.googleusercontent.com/p/AF1QipOV5bz48RxMXELVjoLJ0x9XA6S_yIK7o0z60Quj=s1360-w1360-h1020",
-    "https://lh3.googleusercontent.com/p/AF1QipM0tMo9f9c5bwdkBQEQT67JBDFi2SDkt3_fN-FX=s1360-w1360-h1020",
-    "https://lh3.googleusercontent.com/p/AF1QipNDZQOA6aIT_QBMOzZrwkT0tQesHIbq7AliXMJz=s1360-w1360-h1020",
-    "https://lh3.googleusercontent.com/p/AF1QipMjclHZpBkpxhAwMcKFv0MQ-HqNIajnm5O0a-Vq=s1360-w1360-h1020"
+    "https://lh3.googleusercontent.com/p/AF1QipObTBBXyc0p2TBCEDZk8ZixxktWaC2yHlBWF0Jh=w1080-h608-p-no-v0",
+    "https://lh3.googleusercontent.com/p/AF1QipNkxB7NKyoSj9C0RAztxBb5kYzjcJOuGKb-_VHH=w1080-h608-p-no-v0",
+    "https://lh3.googleusercontent.com/p/AF1QipOV5bz48RxMXELVjoLJ0x9XA6S_yIK7o0z60Quj=w1080-h608-p-no-v0",
+    "https://lh3.googleusercontent.com/p/AF1QipM0tMo9f9c5bwdkBQEQT67JBDFi2SDkt3_fN-FX=w1080-h608-p-no-v0",
+    "https://lh3.googleusercontent.com/p/AF1QipNDZQOA6aIT_QBMOzZrwkT0tQesHIbq7AliXMJz=w1080-h608-p-no-v0",
+    "https://lh3.googleusercontent.com/p/AF1QipMjclHZpBkpxhAwMcKFv0MQ-HqNIajnm5O0a-Vq=w1080-h608-p-no-v0"
   ];
 
   const openImage = (image: string) => {
@@ -29,13 +29,13 @@ export const GalleryGrid = () => {
         {galleryImages.map((image, index) => (
           <div 
             key={index} 
-            className="overflow-hidden cursor-pointer"
+            className="overflow-hidden cursor-pointer aspect-square"
             onClick={() => openImage(image)}
           >
             <img 
               src={image} 
               alt={`Gallery image ${index + 1}`} 
-              className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
           </div>
         ))}

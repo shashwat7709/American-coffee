@@ -12,11 +12,11 @@ export const FeaturedProduct = ({ image, title, price, description }: FeaturedPr
   return (
     <div className="group">
       <Link to="/menu" className="block">
-        <div className="overflow-hidden mb-4">
+        <div className="overflow-hidden mb-4 aspect-square">
           <img 
             src={image} 
             alt={title} 
-            className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <h3 className="text-xl font-light mb-2 tracking-wide">{title}</h3>

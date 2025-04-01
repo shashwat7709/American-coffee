@@ -23,7 +23,7 @@ const HomePage = () => {
       <section className="h-screen relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <div 
-          className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/p/AF1QipObTBBXyc0p2TBCEDZk8ZixxktWaC2yHlBWF0Jh=s1360-w1360-h1020')] bg-cover bg-center"
+          className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/p/AF1QipObTBBXyc0p2TBCEDZk8ZixxktWaC2yHlBWF0Jh=w1080-h608-p-no-v0')] bg-cover bg-center"
           aria-hidden="true"
         ></div>
         
@@ -52,19 +52,19 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <FeaturedProduct 
-              image="https://lh3.googleusercontent.com/p/AF1QipOV5bz48RxMXELVjoLJ0x9XA6S_yIK7o0z60Quj=s1360-w1360-h1020" 
+              image="https://lh3.googleusercontent.com/p/AF1QipOV5bz48RxMXELVjoLJ0x9XA6S_yIK7o0z60Quj=w1080-h608-p-no-v0" 
               title="Signature Blend" 
               price="$16.99"
               description="Our house specialty, rich and aromatic with notes of chocolate and caramel."
             />
             <FeaturedProduct 
-              image="https://lh3.googleusercontent.com/p/AF1QipM0tMo9f9c5bwdkBQEQT67JBDFi2SDkt3_fN-FX=s1360-w1360-h1020" 
+              image="https://lh3.googleusercontent.com/p/AF1QipM0tMo9f9c5bwdkBQEQT67JBDFi2SDkt3_fN-FX=w1080-h608-p-no-v0" 
               title="Single Origin" 
               price="$18.99"
               description="Carefully selected beans from premium coffee growing regions."
             />
             <FeaturedProduct 
-              image="https://lh3.googleusercontent.com/p/AF1QipNDZQOA6aIT_QBMOzZrwkT0tQesHIbq7AliXMJz=s1360-w1360-h1020" 
+              image="https://lh3.googleusercontent.com/p/AF1QipNDZQOA6aIT_QBMOzZrwkT0tQesHIbq7AliXMJz=w1080-h608-p-no-v0" 
               title="Espresso Blend" 
               price="$17.99"
               description="Bold and balanced, perfect for espresso drinks and cold brew."
@@ -95,7 +95,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://lh3.googleusercontent.com/p/AF1QipMjclHZpBkpxhAwMcKFv0MQ-HqNIajnm5O0a-Vq=s1360-w1360-h1020" 
+                src="https://lh3.googleusercontent.com/p/AF1QipMjclHZpBkpxhAwMcKFv0MQ-HqNIajnm5O0a-Vq=w1080-h608-p-no-v0" 
                 alt="Coffee shop interior" 
                 className="w-full h-auto object-cover"
               />
