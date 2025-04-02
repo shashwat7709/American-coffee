@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { FeaturedProduct } from "@/components/FeaturedProduct";
-import { SplineScene } from "@/components/SplineScene";
+import SplineScene from "@/components/SplineScene";
 
 const HomePage = () => {
   const testimonials = [
@@ -18,10 +18,13 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#f5e6d3]">
       {/* Hero Section */}
-      <section className="h-screen relative flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent z-10"></div>
+      <section 
+        className="h-screen relative flex items-center justify-center overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: 'url("/images/pexels-fotios-photos-1855214.jpg")' }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#4a3428]/80 to-[#6b4c3d]/70 z-10"></div>
         
         <div className="container mx-auto px-4 relative z-20 flex flex-col md:flex-row items-center justify-between h-full pt-20">
           <div className="md:w-1/2 text-left">
@@ -41,14 +44,14 @@ const HomePage = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-3/5 h-[400px] md:h-[800px] absolute right-0 top-1/2 -translate-y-1/2">
+          <div className="w-full md:w-3/5 h-[400px] md:h-[800px] absolute right-0 top-1/2 -translate-y-1/2 z-0">
             <SplineScene />
           </div>
         </div>
       </section>
 
       {/* Featured Products */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#f5e6d3]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-light mb-16 text-center tracking-wide">FEATURED COFFEE</h2>
           
@@ -97,9 +100,9 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://lh3.googleusercontent.com/p/AF1QipMjclHZpBkpxhAwMcKFv0MQ-HqNIajnm5O0a-Vq=w1080-h608-p-no-v0" 
+                src="/images/pexels-fotios-photos-1855214.jpg" 
                 alt="Coffee shop interior" 
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover rounded-lg shadow-xl"
               />
             </div>
             <div className="max-w-lg">
@@ -122,7 +125,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-gray-900 text-white">
+      <section className="py-24 bg-[#2c1810] text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-light mb-16 text-center tracking-wide">WHAT PEOPLE SAY</h2>
           
@@ -142,7 +145,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-amber-900">
+      <section className="py-24 bg-[#8b4513]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-light mb-6 text-white tracking-wide">VISIT US TODAY</h2>
           <p className="text-amber-200 max-w-2xl mx-auto mb-10 leading-relaxed">

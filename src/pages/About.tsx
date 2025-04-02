@@ -1,11 +1,10 @@
-
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Coffee, Users, Clock } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-amber-50">
-      <div className="bg-amber-900 text-amber-50 py-16">
+    <div className="min-h-screen bg-[#f5e6d3]">
+      <div className="bg-[#2c1810] text-amber-50 py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
           <p className="max-w-2xl mx-auto">
@@ -52,7 +51,7 @@ const About = () => {
       </section>
       
       {/* Our Values */}
-      <section className="py-16 bg-amber-100">
+      <section className="py-16 bg-[#e6d5c3]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Our Values</h2>
           

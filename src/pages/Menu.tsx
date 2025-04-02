@@ -196,8 +196,8 @@ const Menu = () => {
   };
 
   return (
-    <div className="min-h-screen bg-amber-50">
-      <div className="bg-amber-900 text-amber-50 py-16">
+    <div className="min-h-screen bg-[#f5e6d3]">
+      <div className="bg-[#2c1810] text-amber-50 py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Our Menu</h1>
           <p className="max-w-2xl mx-auto">
