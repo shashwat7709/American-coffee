@@ -18,7 +18,76 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <section class="testimonials">
+        <h2>WHAT PEOPLE SAY</h2>
+        
+        <div class="testimonial-slider">
+          <div class="testimonial-track">
+            <div class="testimonial-slide">
+              <div class="review-card">
+                <img src="profile1.jpg" alt="Customer" class="profile-pic">
+                <div class="review-content">
+                  <p>"The <strong>coffee</strong> here is truly <strong>exceptional</strong>! I stop by every morning on my way to <strong>work</strong>."</p>
+                  <div class="reviewer">— Sarah M.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide">
+              <div class="review-card">
+                <img src="profile2.jpg" alt="Customer" class="profile-pic">
+                <div class="review-content">
+                  <p>"<strong>Kudos</strong> to the <strong>baristas</strong> and <strong>staff</strong> for creating such an amazing experience! 👍 ✨"</p>
+                  <div class="reviewer">— Michael R.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide">
+              <div class="review-card">
+                <img src="profile3.jpg" alt="Customer" class="profile-pic">
+                <div class="review-content">
+                  <p>"The <strong>pastries</strong> are fresh and the <strong>atmosphere</strong> is so welcoming and cozy."</p>
+                  <div class="reviewer">— Emma L.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="product-carousel">
+          <div class="product-track">
+            <div class="product-card" data-tilt>
+              <img src="signature-blend.jpg" alt="Signature Blend Cookies">
+              <h3>Signature Blend</h3>
+              <p class="price">$12.99</p>
+            </div>
+
+            <div class="product-card" data-tilt>
+              <img src="single-origin.jpg" alt="Single Origin Croissant">
+              <h3>Single Origin</h3>
+              <p class="price">$13.99</p>
+            </div>
+
+            <div class="product-card" data-tilt>
+              <img src="espresso-blend.jpg" alt="Espresso Blend Cinnamon Rolls">
+              <h3>Espresso Blend</h3>
+              <p class="price">$17.99</p>
+            </div>
+          </div>
+          
+          <!-- Add navigation dots -->
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
